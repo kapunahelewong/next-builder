@@ -2,7 +2,6 @@ import { Builder } from "@builder.io/react";
 import dynamic from "next/dynamic";
 
 export const Button = (props) => (
-  // <h1 style={{ color: props.color }}>{props.title}</h1>
   <button
     style={{
       padding: 40,
