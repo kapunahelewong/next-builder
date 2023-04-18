@@ -19,6 +19,10 @@ export async function getStaticProps({
         userAttributes: {
           urlPath: "/" + (params?.page?.join("/") || ""),
         },
+        options: {
+          // locale: "fr-FR",
+          locale: "en-US",
+        },
       })
       .toPromise()) || null;
 
@@ -67,7 +71,7 @@ export default function Page({
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
 
-      <BuilderComponent model="page" content={page} />
+      <BuilderComponent model="page" content={page} locale="fr-FR" />
     </>
   );
 }
